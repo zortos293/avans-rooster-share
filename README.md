@@ -41,11 +41,16 @@ ICS-details: `VCALENDAR` + `VEVENT` met `UID`, `DTSTART`/`DTEND` (`TZID=Europe/B
 
 ## Railway
 
-App is Nixpacks/Docker-vriendelijk (`package.json` start-script, `Procfile`, `Dockerfile`, `railway.json`).
+Publiek live:
 
-- `PORT` komt uit de omgeving; de server luistert op `0.0.0.0`.
-- Geen secrets / geen auth (publieke klas-share).
-- Publieke URL: zie Railway dashboard / gegenereerd domein.
+- Site: https://web-production-925c4.up.railway.app/
+- ICS: https://web-production-925c4.up.railway.app/rooster.ics
+
+Project `avans-rooster-share` deploys vanaf GitHub `main` (auto). Nixpacks/`package.json`/`Procfile`/`Dockerfile` aanwezig.
+
+- `PORT` uit de omgeving; server luistert op `0.0.0.0`
+- Geen secrets / geen auth
+- Healthcheck: `/health`
 
 ## Data
 
