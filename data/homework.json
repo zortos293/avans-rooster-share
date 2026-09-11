@@ -1,0 +1,19 @@
+{
+  "course": "ICT-H ICT-SE 1.1 Een (deel)proces automatiseren 2026-27 P2 Den Bosch",
+  "course_id": 308411,
+  "enrollment": {"P1": false, "P2": true},
+  "assignments": [
+    {"section":"LU3: Jij en de Beroepspraktijk (summatief)","title":"Eindopdracht 2: Jouw kwaliteiten en ambities","due":"2026-09-27T23:59:00","status":"Not Submitted","relates_to_weeks_1_5":true},
+    {"section":"LU3: Jij en de Beroepspraktijk (summatief)","title":"Eindopdracht 3: ICT-trend onderzoeken / tevens herkansing","due":"2026-01-05T10:00:00","status":"Not Submitted","relates_to_weeks_1_5":false,"note":"Brightspace displayed this past-dated deadline and 'Ends Jan 5'."},
+    {"section":"LU3: Jij en de Beroepspraktijk (summatief)","title":"Eindopdracht 4: Persoonlijk Ontwikkelplan (POP)","due":"2026-10-26T23:59:00","status":"Not Submitted","relates_to_weeks_1_5":false,"attachments":["Week6_LU3_POPinvuldocument.docx"]},
+    {"section":"LU3: Jij en de Beroepspraktijk (summatief)","title":"Inleverlink werkboek PPO en Beroepenveld","due":"2026-11-01T23:59:00","status":"Not Submitted","relates_to_weeks_1_5":true},
+    {"section":"LU3: Onderzoek en Communicatie (formatief)","title":"Huiswerk 1: ICT Trend","due":null,"status":"1 Submission","relates_to_weeks_1_5":true,"note":"No due date displayed in the assignment list."},
+    {"section":"LU3: Onderzoek en Communicatie (formatief)","title":"Huiswerk 1: Bronnen beoordelen","due":null,"status":"Not Submitted","relates_to_weeks_1_5":true,"note":"No due date displayed in the assignment list."},
+    {"section":"LU3: Onderzoek en Communicatie (formatief)","title":"Huiswerk 2: Hoofd- en deelvragen","due":null,"status":"Not Submitted","relates_to_weeks_1_5":true,"note":"No due date displayed in the assignment list."},
+    {"section":"LU3: Onderzoek en Communicatie (formatief)","title":"Huiswerk 3: Onderzoeksmethoden","due":null,"status":"Not Submitted","relates_to_weeks_1_5":true,"note":"No due date displayed in the assignment list."},
+    {"section":"LU3: Onderzoek en Communicatie (formatief)","title":"Huiswerk 4: Communicatievormen","due":null,"status":"Not Submitted","relates_to_weeks_1_5":true,"note":"No due date displayed in the assignment list."},
+    {"section":"LU3: Onderzoek en Communicatie (formatief)","title":"Huiswerk 5: Infographic","due":null,"status":"Not Submitted","relates_to_weeks_1_5":true,"note":"No due date displayed in the assignment list."},
+    {"section":"LU3: Onderzoek en Communicatie (formatief)","title":"Huiswerk 6: Kennisclip","due":null,"status":"Not Submitted","relates_to_weeks_1_5":false,"note":"No due date displayed in the assignment list."},
+    {"section":"LU3: Onderzoek en Communicatie (formatief)","title":"Huiswerk 7: Feedback verwerken","due":null,"status":"Not Submitted","relates_to_weeks_1_5":false,"note":"No due date displayed in the assignment list."}
+  ]
+}

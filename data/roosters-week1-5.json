@@ -1,0 +1,79 @@
+{
+  "roster": "290ICT1SEVSb",
+  "source": "https://avans.one/",
+  "blokweken": [
+    {"blokweek": 1, "start_date": "2026-08-31", "end_date": "2026-09-06", "ui_label": "Periode 1 - Blokweek 1", "lessons": [
+      {"date":"2026-08-31","day":"Monday","start":"09:00","end":"09:30","course_title":"ICT Startweek Ontvangst","room":"Meerdere locaties"},
+      {"date":"2026-08-31","day":"Monday","start":"09:30","end":"10:00","course_title":"ICT Startweek Weekopening","room":"Meerdere locaties"},
+      {"date":"2026-08-31","day":"Monday","start":"10:00","end":"10:30","course_title":"ICT Startweek Groepsfoto","room":"Meerdere locaties"},
+      {"date":"2026-08-31","day":"Monday","start":"10:30","end":"11:30","course_title":"LU01.3 - PPO en Beroepenveld","room":"OB106"},
+      {"date":"2026-08-31","day":"Monday","start":"11:30","end":"12:00","course_title":"ICT Startweek","room":"Meerdere locaties"},
+      {"date":"2026-08-31","day":"Monday","start":"12:00","end":"13:00","course_title":"ICT Startweek Lunch","room":"Meerdere locaties"},
+      {"date":"2026-08-31","day":"Monday","start":"13:00","end":"15:00","course_title":"ICT Startweek","room":"Meerdere locaties"},
+      {"date":"2026-08-31","day":"Monday","start":"15:00","end":"16:30","course_title":"BLOK01 - Kickoff / weekstart","room":"OB101"},
+      {"date":"2026-09-01","day":"Tuesday","start":"09:00","end":"10:00","course_title":"LU01.3 - PPO en Beroepenveld","room":"OB106"},
+      {"date":"2026-09-01","day":"Tuesday","start":"10:00","end":"12:00","course_title":"ICT Startweek","room":"Meerdere locaties"},
+      {"date":"2026-09-01","day":"Tuesday","start":"13:30","end":"22:00","course_title":"ICT Startweek","room":"Meerdere locaties"},
+      {"date":"2026-09-02","day":"Wednesday","start":"12:00","end":"12:30","course_title":"ICT Startweek Lunch","room":"Meerdere locaties"},
+      {"date":"2026-09-02","day":"Wednesday","start":"12:30","end":"17:00","course_title":"ICT Startweek","room":"Meerdere locaties"},
+      {"date":"2026-09-02","day":"Wednesday","start":"17:00","end":"22:00","course_title":"ICT Startweek","room":"Meerdere locaties"},
+      {"date":"2026-09-03","day":"Thursday","start":"09:00","end":"10:30","course_title":"LU01.1 - Workshop databases","room":"OB106"},
+      {"date":"2026-09-03","day":"Thursday","start":"10:30","end":"12:00","course_title":"LU01.3 - Onderzoek en Communicatie","room":"OB209"},
+      {"date":"2026-09-03","day":"Thursday","start":"12:00","end":"12:30","course_title":"ICT Startweek Lunch","room":"Meerdere locaties"},
+      {"date":"2026-09-03","day":"Thursday","start":"12:30","end":"17:00","course_title":"ICT Startweek","room":"Meerdere locaties"},
+      {"date":"2026-09-04","day":"Friday","start":"10:30","end":"12:00","course_title":"LU01.2 - Workshop backend","room":"OX215"},
+      {"date":"2026-09-04","day":"Friday","start":"12:00","end":"12:30","course_title":"ICT Startweek Lunch","room":"Meerdere locaties"},
+      {"date":"2026-09-04","day":"Friday","start":"12:30","end":"14:00","course_title":"ICT Startweek","room":"Meerdere locaties"},
+      {"date":"2026-09-04","day":"Friday","start":"14:00","end":"14:30","course_title":"ICT Startweek","room":"Meerdere locaties"},
+      {"date":"2026-09-04","day":"Friday","start":"14:30","end":"17:00","course_title":"ICT Startweek","room":"Meerdere locaties"}
+    ]},
+    {"blokweek": 2, "start_date": "2026-09-07", "end_date": "2026-09-13", "ui_label": "Periode 1 - Blokweek 2", "lessons": [
+      {"date":"2026-09-07","day":"Monday","start":"09:00","end":"10:30","course_title":"LU01.3 - Onderzoek en Communicatie","room":"OB308"},
+      {"date":"2026-09-07","day":"Monday","start":"11:00","end":"13:00","course_title":"LU01.3 - PPO en Beroepenveld","room":"OX215"},
+      {"date":"2026-09-07","day":"Monday","start":"13:30","end":"15:00","course_title":"LU01.2 - Workshop frontend","room":"OX215"},
+      {"date":"2026-09-08","day":"Tuesday","start":"12:30","end":"14:00","course_title":"LU01.2 - Workshop backend","room":"OB105"},
+      {"date":"2026-09-08","day":"Tuesday","start":"14:00","end":"15:30","course_title":"LU01.3 - Gastcollege/Alumni","room":"OB001"},
+      {"date":"2026-09-11","day":"Friday","start":"09:00","end":"10:30","course_title":"LU01.1 - Workshop databases","room":"OB104"},
+      {"date":"2026-09-11","day":"Friday","start":"10:30","end":"12:00","course_title":"LU01.2 - Workshop backend","room":"OX215"},
+      {"date":"2026-09-11","day":"Friday","start":"12:30","end":"14:00","course_title":"LU01.2 - Workshop frontend","room":"OC106"}
+    ]},
+    {"blokweek": 3, "start_date": "2026-09-14", "end_date": "2026-09-20", "ui_label": "Periode 1 - Blokweek 3", "lessons": [
+      {"date":"2026-09-15","day":"Tuesday","start":"14:00","end":"15:30","course_title":"LU01.2 - Workshop backend","room":"OC115"},
+      {"date":"2026-09-16","day":"Wednesday","start":"12:30","end":"14:30","course_title":"LU01.3 - PPO en Beroepenveld","room":"OB103"},
+      {"date":"2026-09-16","day":"Wednesday","start":"14:30","end":"16:00","course_title":"LU01.3 - Onderzoek en Communicatie","room":"OB308"},
+      {"date":"2026-09-16","day":"Wednesday","start":"17:00","end":"20:00","course_title":"ICT Community","room":"OB107"},
+      {"date":"2026-09-17","day":"Thursday","start":"09:00","end":"10:30","course_title":"LU01.2 - Workshop backend","room":"OB103"},
+      {"date":"2026-09-17","day":"Thursday","start":"10:30","end":"12:00","course_title":"LU01.1 - Workshop databases","room":"OB107"},
+      {"date":"2026-09-17","day":"Thursday","start":"15:30","end":"17:00","course_title":"Going Abroad (voorlichting niet verplicht) ATD","room":"Meerdere locaties"}
+    ]},
+    {"blokweek": 4, "start_date": "2026-09-21", "end_date": "2026-09-27", "ui_label": "Periode 1 - Blokweek 4", "lessons": [
+      {"date":"2026-09-21","day":"Monday","start":"09:30","end":"12:00","course_title":"LU01.3 - SLB gesprek blok 1","room":"OB203"},
+      {"date":"2026-09-21","day":"Monday","start":"12:30","end":"14:30","course_title":"LU01.3 - PPO en Beroepenveld","room":"OC114"},
+      {"date":"2026-09-21","day":"Monday","start":"15:00","end":"16:30","course_title":"LU01.2 - Workshop frontend","room":"OB104"},
+      {"date":"2026-09-23","day":"Wednesday","start":"10:30","end":"12:00","course_title":"LU01.3 - Onderzoek en Communicatie","room":"OB308"},
+      {"date":"2026-09-23","day":"Wednesday","start":"12:30","end":"14:00","course_title":"LU01.2 - Workshop backend","room":"OX215"},
+      {"date":"2026-09-23","day":"Wednesday","start":"14:00","end":"15:00","course_title":"LU01.3 - Bedrijfsbezoek","room":"Extern"},
+      {"date":"2026-09-23","day":"Wednesday","start":"15:00","end":"18:00","course_title":"LU01.3 - Bedrijfsbezoek","room":"Extern"},
+      {"date":"2026-09-23","day":"Wednesday","start":"17:00","end":"20:00","course_title":"ICT Community","room":"OB107"},
+      {"date":"2026-09-25","day":"Friday","start":"09:00","end":"10:30","course_title":"LU01.2 - Workshop backend","room":"OB105"},
+      {"date":"2026-09-25","day":"Friday","start":"10:30","end":"12:00","course_title":"LU01.2 - Workshop frontend","room":"OB104"},
+      {"date":"2026-09-25","day":"Friday","start":"12:30","end":"14:00","course_title":"LU01.1 - Workshop databases","room":"OB105"}
+    ]},
+    {"blokweek": 5, "start_date": "2026-09-28", "end_date": "2026-10-04", "ui_label": "Periode 1 - Blokweek 5", "lessons": [
+      {"date":"2026-09-28","day":"Monday","start":"09:30","end":"12:00","course_title":"LU01.3 - SLB gesprek blok 1","room":"OX208"},
+      {"date":"2026-09-28","day":"Monday","start":"12:30","end":"14:30","course_title":"LU01.3 - PPO en Beroepenveld","room":"OX215"},
+      {"date":"2026-09-29","day":"Tuesday","start":"09:00","end":"10:30","course_title":"LU01.3 - Onderzoek en Communicatie","room":"OB308"},
+      {"date":"2026-09-29","day":"Tuesday","start":"10:30","end":"12:00","course_title":"BLOK01 - Kickoff / weekstart","room":"OX215"},
+      {"date":"2026-09-29","day":"Tuesday","start":"14:00","end":"16:00","course_title":"LU01.2 - Assessment Frontend + Backend","room":"Meerdere locaties"},
+      {"date":"2026-09-30","day":"Wednesday","start":"17:00","end":"20:00","course_title":"ICT Community","room":"OB107"},
+      {"date":"2026-10-01","day":"Thursday","start":"09:00","end":"12:00","course_title":"LU01.1 - Assessment Databases","room":"OG228"},
+      {"date":"2026-10-01","day":"Thursday","start":"12:30","end":"14:30","course_title":"LU01.2 - Assessment Frontend + Backend","room":"Meerdere locaties"},
+      {"date":"2026-10-01","day":"Thursday","start":"15:00","end":"17:00","course_title":"LU01.2 - Assessment Frontend + Backend","room":"Meerdere locaties"},
+      {"date":"2026-10-02","day":"Friday","start":"09:00","end":"11:00","course_title":"LU01.2 - Assessment Frontend + Backend","room":"Meerdere locaties"},
+      {"date":"2026-10-02","day":"Friday","start":"11:00","end":"13:30","course_title":"LU01.1 - Assessment Databases","room":"OG228"},
+      {"date":"2026-10-02","day":"Friday","start":"11:30","end":"13:30","course_title":"LU01.2 - Assessment Frontend + Backend","room":"Meerdere locaties"},
+      {"date":"2026-10-02","day":"Friday","start":"13:30","end":"16:30","course_title":"LU01.1 - Assessment Databases","room":"OG228"},
+      {"date":"2026-10-02","day":"Friday","start":"14:00","end":"16:00","course_title":"LU01.2 - Assessment Frontend + Backend","room":"Meerdere locaties"}
+    ]}
+  ]
+}

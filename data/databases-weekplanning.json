@@ -1,0 +1,91 @@
+{
+  "course": "LU01.1 - Databases",
+  "source": "user-provided weekplanning",
+  "note": "Volg Installatie-instructies; bij problemen naar supportuur.",
+  "lessons": [
+    {
+      "les": 1,
+      "date": "2026-09-03",
+      "topics_les": [
+        "Introductie",
+        "SELECT, ORDER BY, Tools",
+        "CREATE, ALTER, DROP"
+      ],
+      "opdrachten": [
+        "SELECT",
+        "ORDER BY",
+        "LIMIT",
+        "CREATE/ALTER/DROP"
+      ],
+      "uren": 4,
+      "blok_extra": {
+        "topics": [
+          "INSERT, UPDATE, DELETE",
+          "NULL",
+          "Comparison/logical/negative/arithmetic operators"
+        ],
+        "opdrachten": [
+          "INSERT/UPDATE/DELETE",
+          "Operators"
+        ],
+        "uren": 4
+      }
+    },
+    {
+      "les": 2,
+      "date": "2026-09-11",
+      "topics_les": [
+        "Scalar Functions"
+      ],
+      "opdrachten": [
+        "Scalar Functies"
+      ],
+      "uren": 5,
+      "blok_extra": {
+        "topics": [
+          "Aggregatie Functies, GROUP BY, HAVING"
+        ],
+        "opdrachten": [
+          "Aggregatie Functies",
+          "GROUP BY & HAVING"
+        ],
+        "uren": 6
+      }
+    },
+    {
+      "les": 3,
+      "date": "2026-09-17",
+      "topics_les": [
+        "EER lezen",
+        "CROSS JOIN, INNER JOIN, multiple table join"
+      ],
+      "opdrachten": [
+        "EER Diagram",
+        "Cross Join",
+        "Inner Join",
+        "Join multiple"
+      ],
+      "uren": 6
+    },
+    {
+      "les": 4,
+      "date": "2026-09-25",
+      "topics_les": [
+        "Oefenassessments"
+      ],
+      "opdrachten": [],
+      "uren": 7
+    },
+    {
+      "les": 5,
+      "date": "2026-10-01",
+      "topics_les": [
+        "Assessment"
+      ],
+      "opdrachten": [
+        "Assessment"
+      ],
+      "uren": 8
+    }
+  ]
+}
