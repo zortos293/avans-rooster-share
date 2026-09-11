@@ -4,6 +4,7 @@ const {
   loadRoster,
   loadHomework,
   loadWeekplannings,
+  loadClassTodos,
   getAllLessons,
   filterLessons,
   getDatedAssignments,
@@ -43,6 +44,7 @@ app.get("/api/meta.json", (req, res) => {
   const deadlines = getDatedAssignments(homework);
   const weekplannings = loadWeekplannings();
   const databases = weekplannings.find((w) => w.id === "databases")?.data || null;
+  const classTodos = loadClassTodos();
 
   res.setHeader("Cache-Control", "public, max-age=300");
   res.json({
@@ -52,6 +54,7 @@ app.get("/api/meta.json", (req, res) => {
     databases,
     weekplannings,
     deadlines,
+    class_todos: classTodos,
     homework_course: homework.course,
   });
 });
@@ -64,7 +67,8 @@ app.get("/rooster.ics", (req, res) => {
     ? `Avans 290ICT1SEVSb – ${vak}`
     : "Avans 290ICT1SEVSb Rooster";
 
-  const ics = buildCalendar(lessons, { calendarName: calName });
+  const classTodos = vak ? [] : loadClassTodos();
+  const ics = buildCalendar(lessons, { calendarName: calName, classTodos });
   const filename = vak
     ? `rooster-${vak.toLowerCase().replace(/[^a-z0-9]+/g, "-")}.ics`
     : "rooster.ics";

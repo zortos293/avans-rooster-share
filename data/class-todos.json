@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-09-11",
+    "source": "docent tijdens les",
+    "course": "LU01.2 Backend",
+    "action": "Lees slides 3a (modulair / functies)",
+    "file": "3a_MODULAIR_FUNCTIES.pptx",
+    "topics": ["modulariteit", "functies", "docstring", "UML AD"],
+    "due_hint": "vóór volgende backend-les",
+    "calendar_block": {
+      "start": "2026-09-11T19:00:00",
+      "end": "2026-09-11T21:00:00",
+      "tz": "Europe/Brussels"
+    }
+  }
+]

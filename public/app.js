@@ -317,6 +317,32 @@ function renderWeekplannings(entries) {
     .join("");
 }
 
+
+function renderClassTodos(todos) {
+  const list = document.getElementById("class-todo-list");
+  if (!list) return;
+  if (!todos || !todos.length) {
+    list.innerHTML = `<p class="empty">Nog geen to-dos uit de les.</p>`;
+    return;
+  }
+  list.innerHTML = todos
+    .map(
+      (t) => `
+      <article class="item">
+        <span class="tag">${escapeHtml(t.course || "Les")} · ${escapeHtml(t.date || "")}</span>
+        <h3>${escapeHtml(t.action || "To-do")}</h3>
+        ${t.file ? `<p class="deadline-due">Slides: ${escapeHtml(t.file)}</p>` : ""}
+        ${
+          t.topics && t.topics.length
+            ? `<p style="margin-top:0.35rem">${escapeHtml(t.topics.join(" · "))}</p>`
+            : ""
+        }
+        ${t.source ? `<p style="margin-top:0.35rem;opacity:.8">${escapeHtml(t.source)}</p>` : ""}
+      </article>`
+    )
+    .join("");
+}
+
 function renderDeadlines(deadlines) {
   const list = document.getElementById("deadline-list");
   if (!deadlines.length) {
@@ -367,6 +393,7 @@ async function init() {
 
   renderRooster(rooster.blokweken || []);
   renderWeekplannings(meta.weekplannings || []);
+  renderClassTodos(meta.class_todos || []);
   renderDeadlines(meta.deadlines || []);
 }
 
