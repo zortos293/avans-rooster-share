@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Klasrooster 290ICT1SEVSb — Periode 1 Blokweek 1–5. Importeer in je agenda."
+    />
+    <title>290ICT1SEVSb · Avans rooster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg-layer" aria-hidden="true"></div>
+
+    <header class="hero">
+      <p class="brand">290ICT1SEVSb</p>
+      <h1>Avans rooster · Periode&nbsp;1</h1>
+      <p class="lede">
+        Blokweek 1–5 voor klasgenoten. Open deze link → importeer in je agenda.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/rooster.ics" download="rooster.ics"
+          >Importeer in agenda</a
+        >
+        <a class="btn btn-ghost" href="#delen">Hoe delen?</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="rooster" aria-labelledby="rooster-title">
+        <div class="section-head">
+          <h2 id="rooster-title">Rooster per blokweek</h2>
+          <p>Alle lessen uit het klasrooster. Tik een week om te openen.</p>
+        </div>
+        <div class="week-tabs" id="week-tabs" role="tablist" aria-label="Blokweken"></div>
+        <div id="week-panels"></div>
+      </section>
+
+      <section class="section" id="databases" aria-labelledby="db-title">
+        <div class="section-head">
+          <h2 id="db-title">Databases weekplanning</h2>
+          <p id="db-note"></p>
+        </div>
+        <div id="db-list" class="stack"></div>
+      </section>
+
+      <section class="section" id="deadlines" aria-labelledby="dl-title">
+        <div class="section-head">
+          <h2 id="dl-title">Inleverdeadlines</h2>
+          <p>Opdrachten met een bekende deadline (Brightspace).</p>
+        </div>
+        <div id="deadline-list" class="stack"></div>
+      </section>
+
+      <section class="section share" id="delen" aria-labelledby="share-title">
+        <div class="section-head">
+          <h2 id="share-title">Deel &amp; abonneer</h2>
+          <p>Open deze link → Importeer in agenda</p>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <strong>Snel</strong> — tik
+            <em>Importeer in agenda</em> bovenaan. Je krijgt een
+            <code>.ics</code>-bestand dat werkt in Google Calendar, Apple Agenda
+            en Outlook.
+          </li>
+          <li>
+            <strong>Google Calendar (via URL)</strong> —
+            Instellingen → Agenda toevoegen → Via URL → plak:
+            <div class="url-box">
+              <code id="ics-url">/rooster.ics</code>
+              <button type="button" class="btn btn-small" id="copy-ics">
+                Kopieer URL
+              </button>
+            </div>
+          </li>
+          <li>
+            <strong>Filter (optioneel)</strong> — alleen databases:
+            <code id="ics-filter">/rooster.ics?vak=databases</code>
+          </li>
+        </ol>
+
+        <p class="api-note">
+          Ruwe data:
+          <a href="/api/rooster.json"><code>/api/rooster.json</code></a>
+          · feed:
+          <a href="/rooster.ics"><code>/rooster.ics</code></a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Bronrooster: <a href="https://avans.one/" rel="noopener">avans.one</a> ·
+        klas 290ICT1SEVSb · timezone Europe/Brussels
+      </p>
+    </footer>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
