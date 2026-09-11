@@ -1,0 +1,34 @@
+{
+  "course": "ICT-H ICT-SE 1.1 Een (deel)proces automatiseren 2026-27 P2 Den Bosch",
+  "period": "P2",
+  "module": "Jij en de beroepspraktijk / PPO en beroepsoriëntatie (LU01.3)",
+  "source": "https://brightspace.avans.nl/d2l/le/lessons/308411/lessons/2107964",
+  "enrollment_check": {"p1": "not visible on My Home", "p2": "enrolled"},
+  "weekplanning_title": "Weekplanning leeruitkomst 3",
+  "columns": ["Week", "Onderwerpen Voorbereiding", "Onderwerpen Les", "Opdrachten na de les (huiswerk)"],
+  "weekplanning": [
+    {"week": 1, "preparation": [], "lesson": ["Kennismaking", "Praktische informatie", "Groepsindeling"], "homework": ["Handoefening"]},
+    {"week": 2, "preparation": ["Handoefening"], "lesson": ["Beroepsoriëntatie 1", "Check-in", "Praktische informatie", "Bespreken handoefening", "Toekomstige ik", "Eindopdracht 1", "Arbeidsmarkt", "Duurzaamheid"], "homework": ["Arbeidsmarkt", "Duurzaamheid", "Security", "Eindopdracht 1"]},
+    {"week": 2, "preparation": [], "lesson": ["Gastcollege"], "homework": ["Gastcollege"]},
+    {"week": 3, "preparation": ["Arbeidsmarkt", "Duurzaamheid", "Security"], "lesson": ["Beroepsoriëntatie 2", "Check-in", "SLB gesprek", "Welzijnsmonitor", "Security", "Bedrijfscultuur"], "homework": ["Welzijnsmonitor", "Security", "Bedrijfscultuur", "Eindopdracht 1"]},
+    {"week": 4, "preparation": ["Security", "Bedrijfscultuur"], "lesson": ["Kwaliteiten en ambities 1", "Check-in", "Eindopdracht 2", "Studievaardigheden en leren studeren", "Plannen en organiseren"], "homework": ["Persoonlijkheidstest", "Breineducatie", "Tijdsbesteding", "Planningsexperiment", "Eindopdracht 1", "Eindopdracht 2"]},
+    {"week": 4, "preparation": ["Welzijnsmonitor"], "lesson": ["SLB gesprek"], "homework": []},
+    {"week": 4, "preparation": [], "lesson": ["Bedrijfsbezoek"], "homework": ["Bedrijfsbezoek"]},
+    {"week": 5, "preparation": ["Persoonlijkheidstest", "Breineducatie", "Tijdsbesteding"], "lesson": ["Kwaliteiten en ambities 2", "Check-in", "Persoonlijkheidstest bespreken", "Kernkwadranten", "Eindopdracht 1 bekijken", "Reflecteren"], "homework": ["Kernkwadranten", "Omgevingsinterview", "Reflecteren", "Eindopdracht 2"]},
+    {"week": 6, "preparation": ["Kernkwadranten", "Omgevingsinterview", "Reflecteren"], "lesson": ["Zelfontwikkeling 1", "Check-in", "Planningsexperiment presentaties", "Persoonlijke SWOT-analyse", "Eindopdracht 1 bekijken", "SMART doelen", "Growth Mindset", "Eindopdracht 4"], "homework": ["SWOT-analyse", "SMART doelen", "Eindopdracht 2", "Eindopdracht 4"]},
+    {"week": 7, "preparation": [], "lesson": ["Zelfontwikkeling 2", "Lego Duck Challenge", "Check-in", "OER en tentamenrooster", "Assessment uitleg", "Intervisie"], "homework": ["Intervisie", "Eindopdracht 4"]},
+    {"week": 8, "preparation": ["Herfstvakantie"], "lesson": ["Herfstvakantie"], "homework": ["Herfstvakantie"]},
+    {"week": 9, "preparation": [], "lesson": [], "homework": []},
+    {"week": 10, "preparation": [], "lesson": ["SLB-gesprek", "Asessment eindopdracht 4"], "homework": []}
+  ],
+  "key_assignments": [
+    {"title": "Eindopdracht 2: Jouw kwaliteiten en ambities", "due_date": "2026-09-27T23:59:00"},
+    {"title": "Eindopdracht 3: ICT-trend onderzoeken / tevens herkansing", "due_date": "2026-01-05T10:00:00", "note": "Date shown by Brightspace; appears in the past relative to the course date."},
+    {"title": "Eindopdracht 4: Persoonlijk Ontwikkelplan (POP)", "due_date": "2026-10-26T23:59:00"},
+    {"title": "Inleverlink werkboek PPO en Beroepenveld", "due_date": "2026-11-01T23:59:00"},
+    {"title": "Werkboek huiswerkopdrachten", "due_date": "before the next lesson for weekly entries", "note": "Instruction says use the same submission link and submit before the next lesson."}
+  ],
+  "downloads": ["/home/box/Downloads/Werkboek [naam]  - beroepsoriëntatie en PPO.docx"],
+  "hours": null,
+  "notes": "The Brightspace table provides weeks but no dates or hours."
+}

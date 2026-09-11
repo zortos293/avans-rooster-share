@@ -1,0 +1,31 @@
+{
+  "course": "ICT-H ICT-SE 1.1 Een (deel)proces automatiseren 2026-27 P2 Den Bosch",
+  "period": "P2",
+  "module": "Software realiseren / Frontend (LU01.2 frontend)",
+  "source": "https://brightspace.avans.nl/d2l/le/lessons/308411/lessons/2108607",
+  "enrollment_check": {"p1": "not visible on My Home", "p2": "enrolled"},
+  "weekplanning": [
+    {"week": 1, "date": "7 sept", "lessons": [
+      {"lesson": 1, "topics": ["Basis", "IDE", "HTML: basisopbouw", "HTML: basiselementen", "CSS: kleuren", "CSS: fonts", "CSS: selectors", "UI: intro"], "assignments": ["VS Code installeren", "opdracht1"], "hours": 10},
+      {"lesson": 2, "topics": ["HTML: links", "HTML: images", "HTML: relatieve paden", "HTML: semantische tags", "CSS: Google fonts", "CSS: icons", "CSS: boxmodel", "CSS: reusing css", "UI: acties en states"], "assignments": ["opdracht2"], "hours": 10}
+    ]},
+    {"week": 2, "date": "11 sept", "lessons": [
+      {"lesson": 1, "topics": ["HTML: forms", "HTML: tabellen", "CSS: nested css", "CSS: variabelen", "UI: formulieren"], "assignments": ["opdracht3"], "hours": 10},
+      {"lesson": 2, "topics": ["CSS: wat niet (meer) doen", "CSS: flexbox", "CSS: grid", "UI"], "assignments": ["opdracht4"], "hours": 10}
+    ]},
+    {"week": 3, "date": "21 sept", "lessons": [{"lesson": 1, "topics": ["proef assessment"], "assignments": ["proefCGI"], "hours": 10}]},
+    {"week": 4, "date": "25 sept", "lessons": [
+      {"lesson": 1, "topics": ["CSS: geavanceerde positionering (static, relative, absolute, fixed, sticky)", "UI: menu's"], "assignments": ["opdracht5"], "hours": 10},
+      {"lesson": 2, "topics": ["CSS: media query", "CSS: responsive images", "CSS: responsive forms", "UI: mobiel"], "assignments": ["opdracht6"], "hours": 16.5}
+    ]},
+    {"week": null, "date": "2 okt", "lessons": [{"lesson": "assessment", "topics": ["assessment"], "assignments": [], "hours": 2}]}
+  ],
+  "key_assignments": [
+    {"title": "VS Code installeren", "due_date": null},
+    {"title": "opdracht1", "due_date": null}, {"title": "opdracht2", "due_date": null},
+    {"title": "opdracht3", "due_date": null}, {"title": "opdracht4", "due_date": null},
+    {"title": "proefCGI", "due_date": null}, {"title": "opdracht5", "due_date": null}, {"title": "opdracht6", "due_date": null}
+  ],
+  "downloads": [],
+  "notes": "Brightspace provides this as an HTML table; no separate weekplanning PDF/doc was linked."
+}

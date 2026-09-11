@@ -1,0 +1,29 @@
+{
+  "course": "ICT-H ICT-SE 1.1 Een (deel)proces automatiseren 2026-27 P2 Den Bosch",
+  "period": "P2",
+  "module": "Jij en de beroepspraktijk / Onderzoek en Communicatie (LU01.3)",
+  "source": "https://brightspace.avans.nl/d2l/le/lessons/308411/lessons/2107967",
+  "enrollment_check": {"p1": "not visible on My Home", "p2": "enrolled"},
+  "weekplanning_title": "Weekplanning Onderzoek en Communicatie",
+  "columns": ["Les", "Onderwerpen Les", "Opdrachten na de les"],
+  "weekplanning": [
+    {"lesson": 1, "date": "3 sept", "topics": ["Wat zijn ICT-trends?", "Uitleg opdracht 3 van het portfolio", "Bronnen zoeken en beoordelen: hoe doe je dat?"], "assignments": ["Lees artikelen over beoordelen van bronnen", "Kies een ICT-trend als onderwerp voor je kennisclip (niet ChatGPT/generatieve AI)", "Zoek en lees minstens vijf bronnen over het gekozen onderwerp", "Maak alvast een APA-bronnenlijst"]},
+    {"lesson": 2, "date": "7 sept", "topics": ["Onderwerp en bronnen", "Bronvermelding", "Scope, hoofd- en deelvragen"], "assignments": ["Formuleer hoofd- en deelvragen; pitch onderwerp, hoofd- en deelvragen in volgende les"]},
+    {"lesson": 3, "date": "16 sept", "topics": ["Hoofd- en deelvragen pitchen", "Communicatievormen"], "assignments": ["Bepaal definitief hoofd- en deelvragen", "Beantwoord eerste deelvraag aan de hand van bronnen; zoek extra bronnen if needed"]},
+    {"lesson": 4, "date": "23 sept", "topics": ["Kennisclip structureren en ontwerpen"], "assignments": ["Werk script of storyboard uit voor de gehele kennisclip", "Begin eventueel met opnemen"]},
+    {"lesson": 5, "date": "29 sept", "topics": ["Infographic"], "assignments": ["Noteer kernpunten van onderzoek", "Kies kernwoorden/symbolen/pictogrammen/metafoor", "Leg verbanden/routes vast", "Maak twee ruwe versies van infographic", "Werk verder aan kennisclip"]},
+    {"lesson": 6, "date": "7 okt", "topics": ["Feedback op de infographics"], "assignments": ["Maak kennisclip en infographic af", "Volgende les: alle kennisclips bekijken"]},
+    {"lesson": 7, "date": "15 okt", "topics": ["Kennisclips bekijken"], "assignments": ["Verwerk interesseformulier in opdracht 4 van je portfolio"]},
+    {"lesson": 8, "date": null, "topics": ["Herfstvakantie"], "assignments": []},
+    {"lesson": 9, "date": "29 okt", "topics": ["assessment"], "assignments": []}
+  ],
+  "key_assignments": [
+    {"title": "Huiswerk 1: ICT Trend", "due_date": null}, {"title": "Huiswerk 1: Bronnen beoordelen", "due_date": null},
+    {"title": "Huiswerk 2: Hoofd- en deelvragen", "due_date": null}, {"title": "Huiswerk 3: Onderzoeksmethoden", "due_date": null},
+    {"title": "Huiswerk 4: Communicatievormen", "due_date": null}, {"title": "Huiswerk 5: Infographic", "due_date": null},
+    {"title": "Huiswerk 6: Kennisclip", "due_date": null}, {"title": "Huiswerk 7: Feedback verwerken", "due_date": null}
+  ],
+  "downloads": [],
+  "hours": null,
+  "notes": "No separate weekplanning PDF/doc linked; this is an HTML table."
+}

@@ -1,0 +1,30 @@
+{
+  "course": "ICT-H ICT-SE 1.1 Een (deel)proces automatiseren 2026-27 P2 Den Bosch",
+  "period": "P2",
+  "module": "Software realiseren / Backend (LU01.2 backend)",
+  "source": "https://brightspace.avans.nl/d2l/le/lessons/308411/lessons/2155387",
+  "enrollment_check": {"p1": "not visible on My Home", "p2": "enrolled"},
+  "hours_note": "Backend says each A and B meeting lasts 1.5 hours; table has A and B columns, so total is 3 hours per numbered lesson unless otherwise noted.",
+  "weekplanning": [
+    {"lesson": 1, "date": "4 sept", "A_topics": ["Wat is programmeren? (WIP)", "Wat is modelleren? (WIM)", "Wat is pseudocode? (PSEUDO)"], "B_topics": [], "hours": {"A": 1.5, "B": 1.5, "total": 3}},
+    {"lesson": 2, "date": "8 sept", "A_topics": ["Variabelen (VAR)", "Statements (STATEMENT)", "Expressies (EXPRESSIE)", "Strings (STRING)", "AD: Action, Control Flow, Initial, Final"], "B_topics": ["Interactie (INTERACTIE)", "Keuzes (KEUZES)", "Testen (TESTEN)", "Tuples (TUPLES)", "Complexere conditie (CCONDITIES)", "AD: Swimlane, Decision, Merge"], "hours": {"A": 1.5, "B": 1.5, "total": 3}},
+    {"lesson": 3, "date": "11 sept", "A_topics": ["Modulariteit (MODULAIR)", "Functies met in-/output (FUNCTIES)", "AD: Call Behavior Action, Object Flow"], "B_topics": ["Consolidatieles"], "hours": {"A": 1.5, "B": 1.5, "total": 3}},
+    {"lesson": 4, "date": "15 sept", "A_topics": ["For (FOR)", "While (WHILE)"], "B_topics": ["Loops (LOOPS)"], "hours": {"A": 1.5, "B": 1.5, "total": 3}},
+    {"lesson": 5, "date": "17 sept", "A_topics": ["Opstart OefenCGI (starten met de opdracht)"], "B_topics": ["Afname OefenCGI (gesprekken voeren)"], "hours": {"A": 1.5, "B": 1.5, "total": 3}},
+    {"lesson": 6, "date": "23 sept", "A_topics": ["Veranderlijkheid (VERANDERLIJKHEID)", "List (LIST)"], "B_topics": ["Dictionary (DICTIONARY)"], "hours": {"A": 1.5, "B": 1.5, "total": 3}},
+    {"lesson": 7, "date": "25 sept", "A_topics": ["Consolidatieles", "Start CGI opdracht", "AD: Fork, Join"], "B_topics": ["Uitloop / extra oefenen"], "hours": {"A": 1.5, "B": 1.5, "total": 3}},
+    {"lesson": null, "date": "2 okt", "A_topics": ["Geen lessen", "Afname CGIs"], "B_topics": ["Geen lessen", "Afname CGIs"], "hours": null}
+  ],
+  "key_assignments": [
+    {"title": "OefenCGI", "due_date": null, "note": "Start in lesson 5; conversations/afname in lesson 5."},
+    {"title": "CGI opdracht", "due_date": null, "note": "Start in lesson 7; CGI assessment on 2 okt."}
+  ],
+  "programming_materials": {
+    "presentations": ["1_WIP_WIM_PSEUDO", "2a_VAR_STATEMENT_EXPRESSIE_STRING", "2b_INTERACTIE_KEUZES_TESTEN_TUPLES_CCONDITIES", "3a_MODULAIR_FUNCTIES", "3b_Consolidatie_QenA", "4a_FOR_WHILE", "4b_LOOPS"],
+    "extra_exercises": "Brightspace Oefenopdrachten folder contains tagged Python exercises for CCONDITIES, EXPRESSIE, FOR, FUNCTIES, KEUZES, LOOPS, MODULAIR, STRING, TESTEN, TUPLES, VAR and WHILE."
+  },
+  "downloads": [
+    "/home/box/Downloads/1_WIP_WIM_PSEUDO.pptx", "/home/box/Downloads/2a_VAR_STATEMENT_EXPRESSIE_STRING.pptx", "/home/box/Downloads/2b_INTERACTIE_KEUZES_TESTEN_TUPLES_CCONDITIES.pptx", "/home/box/Downloads/3a_MODULAIR_FUNCTIES.pptx", "/home/box/Downloads/3b_Consolidatie_QenA.pptx", "/home/box/Downloads/4a_FOR_WHILE.pptx", "/home/box/Downloads/4b_LOOPS.pptx"
+  ],
+  "notes": "No separate backend weekplanning PDF/doc linked; the weekplanning is an HTML table."
+}

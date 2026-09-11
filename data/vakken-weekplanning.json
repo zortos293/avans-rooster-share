@@ -1,0 +1,18 @@
+{
+  "course": "ICT-H ICT-SE 1.1 Een (deel)proces automatiseren 2026-27 P2 Den Bosch",
+  "enrolled_period": "P2 Den Bosch",
+  "p1_status": "P1 course was not visible in My Home; only P2 appeared enrolled.",
+  "opleiding_ict_shell": {"course_id": "30769", "checked": true, "content_modules_seen": ["Module catalogus", "Docenten"], "course_specific_weekplanning": false},
+  "files": ["frontend-weekplanning.json", "backend-weekplanning.json", "ppo-weekplanning.json", "onderzoek-weekplanning.json"],
+  "download_directory": "/home/box/Downloads",
+  "downloads": [
+    "/home/box/Downloads/Werkboek [naam]  - beroepsoriëntatie en PPO.docx",
+    "/home/box/Downloads/1_WIP_WIM_PSEUDO.pptx",
+    "/home/box/Downloads/2a_VAR_STATEMENT_EXPRESSIE_STRING.pptx",
+    "/home/box/Downloads/2b_INTERACTIE_KEUZES_TESTEN_TUPLES_CCONDITIES.pptx",
+    "/home/box/Downloads/3a_MODULAIR_FUNCTIES.pptx",
+    "/home/box/Downloads/3b_Consolidatie_QenA.pptx",
+    "/home/box/Downloads/4a_FOR_WHILE.pptx",
+    "/home/box/Downloads/4b_LOOPS.pptx"
+  ]
+}
