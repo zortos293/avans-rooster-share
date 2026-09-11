@@ -2,8 +2,8 @@ const path = require("path");
 const express = require("express");
 const {
   loadRoster,
-  loadDatabasesWeekplanning,
   loadHomework,
+  loadWeekplannings,
   getAllLessons,
   filterLessons,
   getDatedAssignments,
@@ -39,15 +39,18 @@ app.get("/api/rooster.json", (req, res) => {
 
 app.get("/api/meta.json", (req, res) => {
   const roster = loadRoster();
-  const databases = loadDatabasesWeekplanning();
   const homework = loadHomework();
   const deadlines = getDatedAssignments(homework);
+  const weekplannings = loadWeekplannings();
+  const databases = weekplannings.find((w) => w.id === "databases")?.data || null;
+
   res.setHeader("Cache-Control", "public, max-age=300");
   res.json({
     klas: roster.roster,
     source: roster.source,
     ics_url: `${absoluteOrigin(req)}/rooster.ics`,
     databases,
+    weekplannings,
     deadlines,
     homework_course: homework.course,
   });
@@ -72,7 +75,6 @@ app.get("/rooster.ics", (req, res) => {
   res.send(ics);
 });
 
-// SPA-ish: serve index for root (static already covers index.html)
 app.get("/health", (_req, res) => {
   res.json({ ok: true, klas: "290ICT1SEVSb" });
 });

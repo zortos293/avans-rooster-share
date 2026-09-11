@@ -39,16 +39,22 @@ npm test       # ICS + data-checks
 
 ICS-details: `VCALENDAR` + `VEVENT` met `UID`, `DTSTART`/`DTEND` (`TZID=Europe/Brussels`), `LOCATION`, `SUMMARY`, `DESCRIPTION` (blokweek).
 
-## Railway (later)
+## Railway
 
-App is Nixpacks/Docker-vriendelijk (`package.json` start-script, `Procfile`, `Dockerfile`).
+App is Nixpacks/Docker-vriendelijk (`package.json` start-script, `Procfile`, `Dockerfile`, `railway.json`).
 
 - `PORT` komt uit de omgeving; de server luistert op `0.0.0.0`.
 - Geen secrets / geen auth (publieke klas-share).
-- **Nog niet publiek deployen** tot Frontend/Backend/andere weekplannings in de agenda staan zoals gewenst. Code kan wel al op GitHub `main` staan voor later koppelen.
+- Publieke URL: zie Railway dashboard / gegenereerd domein.
 
 ## Data
 
-- `data/roosters-week1-5.json` — lessen Blokweek 1–5
-- `data/databases-weekplanning.json` — LU01.1 Databases weekplanning
+- `data/roosters-week1-5.json` — lessen Blokweek 1–5 (bron voor ICS)
+- `data/databases-weekplanning.json` — LU01.1 Databases
+- `data/frontend-weekplanning.json` — LU01.2 Frontend
+- `data/backend-weekplanning.json` — LU01.2 Backend
+- `data/ppo-weekplanning.json` — LU01.3 PPO / beroepsoriëntatie
+- `data/onderzoek-weekplanning.json` — LU01.3 Onderzoek & communicatie
 - `data/homework.json` — Brightspace-opdrachten (alleen items met `due` tonen we als deadline)
+
+Weekplanning-bestanden die bestaan worden automatisch op de homepage getoond.

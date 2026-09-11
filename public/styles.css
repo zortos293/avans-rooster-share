@@ -190,6 +190,32 @@ main {
   color: var(--ink-soft);
 }
 
+.vak-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1.6rem;
+}
+
+.vak-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.vak-link:hover {
+  background: #fff;
+  border-color: rgba(232, 93, 4, 0.35);
+}
+
 .week-tabs {
   display: flex;
   gap: 0.45rem;

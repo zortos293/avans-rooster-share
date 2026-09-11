@@ -9,6 +9,7 @@ const DAY_NL = {
 };
 
 function formatDateNL(isoDate) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(isoDate)) return isoDate;
   const d = new Date(`${isoDate}T12:00:00`);
   return d.toLocaleDateString("nl-NL", {
     weekday: "long",
@@ -19,6 +20,7 @@ function formatDateNL(isoDate) {
 
 function formatDeadline(iso) {
   const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return String(iso);
   return d.toLocaleString("nl-NL", {
     weekday: "short",
     day: "numeric",
@@ -99,8 +101,6 @@ function renderRooster(blokweken) {
       .join("");
 
     panels.appendChild(panel);
-
-    // subtle stagger on first paint
     panel.style.animationDelay = `${0.05 * i}s`;
   });
 }
@@ -116,37 +116,203 @@ function selectWeek(blokweek) {
 }
 
 function escapeHtml(str) {
-  return String(str)
+  return String(str ?? "")
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
 }
 
-function renderDatabases(data) {
-  const note = document.getElementById("db-note");
-  const list = document.getElementById("db-list");
-  note.textContent = data.note || data.course || "";
+function listHtml(items, label) {
+  if (!items || !items.length) return "";
+  return `<p><strong>${escapeHtml(label)}</strong></p><ul>${items
+    .map((t) => `<li>${escapeHtml(t)}</li>`)
+    .join("")}</ul>`;
+}
 
-  list.innerHTML = (data.lessons || [])
-    .map((les) => {
-      const topics = (les.topics_les || []).map((t) => `<li>${escapeHtml(t)}</li>`).join("");
-      const ops = (les.opdrachten || []).map((t) => `<li>${escapeHtml(t)}</li>`).join("");
-      const extra = les.blok_extra
-        ? `<p style="margin-top:0.55rem"><strong>Blok extra</strong> (${les.blok_extra.uren}u): ${(
-            les.blok_extra.topics || []
-          )
-            .map(escapeHtml)
-            .join(" · ")}</p>`
-        : "";
-      return `
+function hoursLabel(hours) {
+  if (hours == null) return "";
+  if (typeof hours === "number") return `${hours}u`;
+  if (typeof hours === "object") {
+    if (hours.total != null) return `${hours.total}u`;
+    const parts = [];
+    if (hours.A != null) parts.push(`A ${hours.A}u`);
+    if (hours.B != null) parts.push(`B ${hours.B}u`);
+    return parts.join(" · ");
+  }
+  return String(hours);
+}
+
+/** Databases shape: data.lessons[] with topics_les / opdrachten */
+function cardsFromDatabases(data) {
+  return (data.lessons || []).map((les) => {
+    const tag = [`Les ${les.les}`, les.date, hoursLabel(les.uren)]
+      .filter(Boolean)
+      .join(" · ");
+    const extra = les.blok_extra
+      ? `<p style="margin-top:0.55rem"><strong>Blok extra</strong> (${les.blok_extra.uren}u): ${(
+          les.blok_extra.topics || []
+        )
+          .map(escapeHtml)
+          .join(" · ")}</p>`
+      : "";
+    return `
+      <article class="item">
+        <span class="tag">${escapeHtml(tag)}</span>
+        <h3>${escapeHtml(formatDateNL(les.date))}</h3>
+        ${listHtml(les.topics_les, "Topics")}
+        ${listHtml(les.opdrachten, "Opdrachten")}
+        ${extra}
+      </article>`;
+  });
+}
+
+/** Frontend: nested week → lessons */
+function cardsFromFrontend(data) {
+  const cards = [];
+  for (const week of data.weekplanning || []) {
+    for (const les of week.lessons || []) {
+      const tag = [
+        week.week != null ? `Week ${week.week}` : "Assessment",
+        week.date,
+        les.lesson != null ? `Les ${les.lesson}` : null,
+        hoursLabel(les.hours),
+      ]
+        .filter(Boolean)
+        .join(" · ");
+      cards.push(`
         <article class="item">
-          <span class="tag">Les ${les.les} · ${escapeHtml(les.date)} · ${les.uren}u</span>
-          <h3>${escapeHtml(formatDateNL(les.date))}</h3>
-          ${topics ? `<p><strong>Topics</strong></p><ul>${topics}</ul>` : ""}
-          ${ops ? `<p style="margin-top:0.45rem"><strong>Opdrachten</strong></p><ul>${ops}</ul>` : ""}
-          ${extra}
-        </article>`;
+          <span class="tag">${escapeHtml(tag)}</span>
+          <h3>${escapeHtml(week.date || `Les ${les.lesson}`)}</h3>
+          ${listHtml(les.topics, "Topics")}
+          ${listHtml(les.assignments, "Opdrachten")}
+        </article>`);
+    }
+  }
+  return cards;
+}
+
+/** Backend: flat lessons with A/B topics */
+function cardsFromBackend(data) {
+  return (data.weekplanning || []).map((les) => {
+    const tag = [
+      les.lesson != null ? `Les ${les.lesson}` : "Assessment",
+      les.date,
+      hoursLabel(les.hours),
+    ]
+      .filter(Boolean)
+      .join(" · ");
+    return `
+      <article class="item">
+        <span class="tag">${escapeHtml(tag)}</span>
+        <h3>${escapeHtml(les.date || `Les ${les.lesson}`)}</h3>
+        ${listHtml(les.A_topics, "Deel A")}
+        ${listHtml(les.B_topics, "Deel B")}
+      </article>`;
+  });
+}
+
+/** PPO: week rows with preparation / lesson / homework */
+function cardsFromPpo(data) {
+  return (data.weekplanning || []).map((row, i) => {
+    if (
+      !(row.preparation || []).length &&
+      !(row.lesson || []).length &&
+      !(row.homework || []).length
+    ) {
+      return "";
+    }
+    const tag = row.week != null ? `Week ${row.week}` : `Item ${i + 1}`;
+    const title =
+      (row.lesson && row.lesson[0]) ||
+      (row.homework && row.homework[0]) ||
+      tag;
+    return `
+      <article class="item">
+        <span class="tag">${escapeHtml(tag)}</span>
+        <h3>${escapeHtml(title)}</h3>
+        ${listHtml(row.preparation, "Voorbereiding")}
+        ${listHtml(row.lesson, "Les")}
+        ${listHtml(row.homework, "Huiswerk")}
+      </article>`;
+  });
+}
+
+/** Onderzoek: lesson + topics + assignments */
+function cardsFromOnderzoek(data) {
+  return (data.weekplanning || []).map((les) => {
+    const tag = [
+      les.lesson != null ? `Les ${les.lesson}` : "Les",
+      les.date,
+    ]
+      .filter(Boolean)
+      .join(" · ");
+    return `
+      <article class="item">
+        <span class="tag">${escapeHtml(tag)}</span>
+        <h3>${escapeHtml(les.date || `Les ${les.lesson}`)}</h3>
+        ${listHtml(les.topics, "Topics")}
+        ${listHtml(les.assignments, "Opdrachten")}
+      </article>`;
+  });
+}
+
+function cardsForWeekplanning(entry) {
+  const data = entry.data || {};
+  if (entry.id === "databases" || Array.isArray(data.lessons)) {
+    return cardsFromDatabases(data);
+  }
+  if (entry.id === "frontend") return cardsFromFrontend(data);
+  if (entry.id === "backend") return cardsFromBackend(data);
+  if (entry.id === "ppo") return cardsFromPpo(data);
+  if (entry.id === "onderzoek") return cardsFromOnderzoek(data);
+
+  // Fallback: try shapes in order
+  if (Array.isArray(data.weekplanning) && data.weekplanning[0]?.A_topics) {
+    return cardsFromBackend(data);
+  }
+  if (Array.isArray(data.weekplanning) && data.weekplanning[0]?.lessons) {
+    return cardsFromFrontend(data);
+  }
+  if (Array.isArray(data.weekplanning) && data.weekplanning[0]?.homework) {
+    return cardsFromPpo(data);
+  }
+  if (Array.isArray(data.weekplanning)) return cardsFromOnderzoek(data);
+  return [];
+}
+
+function renderWeekplannings(entries) {
+  const nav = document.getElementById("vak-nav");
+  const host = document.getElementById("weekplanning-sections");
+  if (!entries.length) {
+    nav.innerHTML = "";
+    host.innerHTML = "";
+    return;
+  }
+
+  nav.innerHTML = entries
+    .map(
+      (e) =>
+        `<a class="vak-link" href="#wp-${escapeHtml(e.id)}">${escapeHtml(
+          e.short || e.title
+        )}</a>`
+    )
+    .join("");
+
+  host.innerHTML = entries
+    .map((entry) => {
+      const data = entry.data || {};
+      const subtitle =
+        data.module || data.note || data.notes || data.course || "";
+      const cards = cardsForWeekplanning(entry).filter(Boolean).join("");
+      return `
+        <section class="section" id="wp-${escapeHtml(entry.id)}" aria-labelledby="title-${escapeHtml(entry.id)}">
+          <div class="section-head">
+            <h2 id="title-${escapeHtml(entry.id)}">${escapeHtml(entry.title)}</h2>
+            <p>${escapeHtml(subtitle)}</p>
+          </div>
+          <div class="stack">${cards || `<p class="empty">Geen weekplanning gevonden.</p>`}</div>
+        </section>`;
     })
     .join("");
 }
@@ -200,7 +366,7 @@ async function init() {
   const meta = await metaRes.json();
 
   renderRooster(rooster.blokweken || []);
-  renderDatabases(meta.databases || {});
+  renderWeekplannings(meta.weekplannings || []);
   renderDeadlines(meta.deadlines || []);
 }
 

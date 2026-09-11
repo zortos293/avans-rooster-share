@@ -6,6 +6,7 @@ const {
   loadRoster,
   getDatedAssignments,
   loadHomework,
+  loadWeekplannings,
 } = require("../lib/data");
 const { buildCalendar, toLocalStamp } = require("../lib/ics");
 
@@ -28,6 +29,19 @@ describe("data", () => {
     const dated = getDatedAssignments(loadHomework());
     assert.ok(dated.length >= 3);
     assert.ok(dated.every((a) => a.due));
+  });
+
+  it("loads all weekplanning JSON files without local download paths", () => {
+    const plans = loadWeekplannings();
+    const ids = plans.map((p) => p.id);
+    assert.ok(ids.includes("databases"));
+    assert.ok(ids.includes("frontend"));
+    assert.ok(ids.includes("backend"));
+    assert.ok(ids.includes("ppo"));
+    assert.ok(ids.includes("onderzoek"));
+    for (const plan of plans) {
+      assert.equal(plan.data.downloads, undefined);
+    }
   });
 });
 
